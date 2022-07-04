@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  background-color: rgb(235, 241, 242);
+}
+/* Header */
+header {
+  padding: 20px;
+  background-color: dodgerblue;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(249, 249, 249);
+  font-style: italic;
+  font-weight: bolder;
+}
+main {
+  /* background-color: rgb(6, 6, 6); */
+  /* padding: 20px; */
+  margin: 20px auto;
+  width: 500px;
+  height: 100vh;
+  text-align: center;
+}
+
+main > div > h1 {
+  font-size: 25px;
+}
+
+main > div > p {
+  font-size: 18px;
+}
+
+/* form */
+.input-flx {
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 10px 15px 20px rgb(130, 119, 119);
+}
+
+.input-txt {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  background-color: rgb(204, 204, 204);
+  border: 3px solid rgb(232, 229, 229);
+  box-shadow: 5px 5px 5px rgb(130, 119, 119);
+  color: rgb(45, 63, 84);
+  text-transform: uppercase;
+}
+.input-button {
+  padding: 1px 12px;
+  border-radius: 5px;
+  background-color: darkgrey;
+  font-size: 14px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  border: 3px solid rgb(232, 229, 229);
+  box-shadow: 5px 5px 5px rgb(130, 119, 119);
+}
+.input-get-cls {
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: 550;
+  font-size: 20px;
+}
+.input-list {
+  margin: 20px 0;
+  background-color: white;
+  list-style: none;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 7px;
+  box-shadow: 10px 15px 20px rgb(130, 119, 119);
+}
+.input-list .input-item {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid rgb(221, 219, 219);
+  margin: 15px;
+  color: rgb(90, 97, 105);
+  text-transform: uppercase;
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.input-list .input-item:hover {
+  background-color: rgb(81, 131, 158);
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.alert {
+  padding: 10px;
+  background-color: rgb(42, 178, 42);
+  font-size: 15px;
+  color: white;
+  border-radius: 7px;
+  text-align: left;
+  border-left: 7px solid green;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert button {
+  background: transparent;
+  border: none;
+  padding: 0 5px;
+  font-size: 15px;
+  height: 20px;
+  color: azure;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input-btn {
+  padding: 1px 10px;
+  border-radius: 5px;
+  background-color: rgb(213, 212, 212);
+  font-size: 14spx;
+  margin-left: 15px;
+  border-color: darkgrey;
+  text-transform: uppercase;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FeedBack - Sports Club</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      SPORTS CLUB
+      <a href="./index.html" style="padding: 5px; font-size: 15px">Back</a>
+    </header>
+    <main>
+      <h3
+        style="
+          font-size: 16px;
+          color: darkblue;
+          text-transform: uppercase;
+          font-weight: bold;
+        "
+      >
+        FeedBack Forms
+      </h3>
+
+      <style>
+        form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          margin-top: 20px;
+        }
+        form * {
+          margin: 5px;
+          width: 100%;
+        }
+        form input,
+        textarea {
+          padding: 5px 20px;
+          border: 1px solid rgb(205, 204, 204);
+          border-radius: 5px;
+          font-size: 13px;
+        }
+        form button {
+          padding: 5px;
+          background-color: rgb(54, 174, 248);
+          border: 0.5px solid rgb(23, 129, 195);
+          border-radius: 5px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        form label {
+          display: flex;
+          align-items: center;
+          font-size: 11px;
+          user-select: none;
+          color: gray;
+        }
+        form label input,
+        form input[type="radio"] {
+          width: auto;
+        }
+        .radio-flx {
+          display: flex;
+        }
+      </style>
+
+      <form name="feedback">
+        <div>
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Enter Full-Name"
+            required
+          />
+        </div>
+        <div class="radio-flx">
+          <div class="radio-flx">
+            <input
+              type="radio"
+              name="type"
+              id="General FeedBack"
+              value="General FeedBack"
+            />
+            <label for="General FeedBack">General FeedBack</label>
+          </div>
+          <div class="radio-flx">
+            <input
+              type="radio"
+              name="type"
+              id="Technical Support"
+              value="Technical Support"
+            />
+            <label for="Technical Support">Technical Support</label>
+          </div>
+          <div class="radio-flx">
+            <input
+              type="radio"
+              name="type"
+              id="Contribution"
+              value="Contribution"
+            />
+            <label for="Contribution">Contribution</label>
+          </div>
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="asdf@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <textarea
+            placeholder="Enter Your FeedBack!"
+            name="description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="terms">
+            <input type="checkbox" name="terms" id="terms" required />
+            I Accepts Terms & Conditions
+          </label>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <script src="./script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Page - Sports Club</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      SPORTS CLUB
+      <a href="./index.html" style="padding: 5px; font-size: 15px">Back</a>
+    </header>
+    <main>
+      <h4 style="font-size: 15px; color: darkblue; text-transform: uppercase">
+        Authors of Sports Club
+      </h4>
+
+      <style>
+        table {
+          margin: 20px auto;
+          border-spacing: 0;
+        }
+
+        tr:first-child {
+          background-color: rgb(20, 140, 232);
+          color: azure;
+        }
+        th {
+          text-transform: uppercase;
+        }
+        th,
+        td {
+          padding: 5px 10px;
+          font-size: 15px;
+          border: 0.5px solid Black;
+        }
+
+        table a {
+          font-size: 13px;
+          color: darkblue;
+        }
+        tr.active {
+          background-color: lightskyblue;
+        }
+      </style>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>GitHub</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>Gokul</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/Gokul</a></td>
+        </tr>
+        <tr>
+          <td>Mani</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/Raj</a></td>
+        </tr>
+        <tr>
+          <td>Anbu</td>
+          <td>Github.com</td>
+          <td><a href="#">https://fb.me/Anbu</a></td>
+        </tr>
+      </table>
+
+      <div>
+        <button style="padding: 1px 5px" data-donate-id="donateId">
+          Support Authors
+        </button>
+        <form id="donateId" style="margin: 10px" hidden>
+          <span style="font-family: Arial">₹</span>
+          <input
+            type="number"
+            placeholder="20"
+            style="padding: 5px 5px"
+            min="1"
+          />
+          <button
+            style="
+              padding: 4px 5px;
+              background-color: rgb(23, 129, 242);
+              border: none;
+              border-radius: 5px;
+              color: #fff;
+            "
+          >
+            Donate
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- <script src="./script4.js"></script> -->
+  </body>
+</html>
